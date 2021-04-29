@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/dialogInfoTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='Даний додаток  надає користувачу можливість попрацювати з регіонами України. Безумовно, можна їх додавати, редагувати та видаляти.  Нижче буде представлена таблиця отримана з бази даних, в якій є поля: назва, населення, площа, назва обласного центру. Далі представлена вибірка з областей, які мають населення не більше, ніж задане. А також  показується середня кількість населення в регіоні. Застосовується ще адресна книга, яка виводить контакти, які починаються з "+38097". І використовуючи карти, обчислюється і показується маршрут від заданої точки до обласного центру. '
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/okInfoTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Зрозуміло"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#FF1100" />
+</LinearLayout>
