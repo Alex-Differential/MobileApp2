@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_go_to_map.setOnClickListener{
-            val intent = Intent(this, MapsActivity::class.java)
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
     }

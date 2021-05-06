@@ -72,7 +72,7 @@ class DataBaseHandler (context: Context):SQLiteOpenHelper(context, DATABASE_NAME
                 } while (cursor!!.moveToNext())
             }
         }
-        return sum/i
+        return Math.round(sum/i*100)/100.0
     }
 
     fun viewRegion(POPULATION:Int): ArrayList<Region> {

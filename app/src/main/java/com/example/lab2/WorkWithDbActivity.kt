@@ -24,8 +24,14 @@ import kotlinx.android.synthetic.main.item_row.*
         setupListofDataIntoRecyclerView()
         //ivDelete.visibility =View.VISIBLE
         saveDBbtn.setOnClickListener{
-            addRecord()
-            setupListofDataIntoRecyclerView()
+            if(editNameRegion.text.toString() != "" && editPopulation.text.toString() != "" && editSquare.text.toString() != "" && editRegCenter.text.toString() != "" ){
+                addRecord()
+                setupListofDataIntoRecyclerView()
+            }
+            else{
+                Toast.makeText(applicationContext, "Всі поля мають бути заповнені!",Toast.LENGTH_LONG).show()
+            }
+
         }
         btnWorkWithDB.setOnClickListener{
             val intent = Intent(this, RequestActivity::class.java)
